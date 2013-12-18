@@ -38,6 +38,12 @@ a:link,a:visited {
 	text-decoration: underline;
 }
 
+.timelineMinor a:link, .timelineMinor a:visited {
+	color: #0092cf;
+	text-decoration: underline;
+}
+
+
 a:hover {
 	color: #0092cf;
 	text-decoration: underline;
@@ -68,6 +74,8 @@ div#timelineContainer {
   border-bottom-left-radius: 5px;
   border-bottom-right-radius: 5px;
   box-shadow: 0 3px 3px -2px rgba(0,0,0,0.2);
+  width:100%;
+  float:left;
 }
 
 #header {
@@ -158,15 +166,13 @@ div.timelineMajor {
 	clear:left;
 	float:left;
 	margin:0 0 12px;
-	width:900px;
+	width:400px;
 }
 
 	.timelineMajor h2 {
 		background:url(../images/timeline_century_tick.gif) left center no-repeat;
-		font-family:Palatino,"Times New Roman", Times, serif;
 		cursor: pointer;
-		font-size:3em;
-		font-weight:400;
+		font-weight:bold;
 		margin:0 0 10px;
 		padding:4px 4px 4px 20px;
 	}
@@ -227,7 +233,7 @@ dl.timelineMinor {
 	}
 
 		.timelineMinor dd h3 {
-			color:#FFF;
+			color:#7DBADF;
 			clear:both;
 			float:left;
 			font-size:1.5em;
@@ -275,7 +281,7 @@ dl.timelineMinor {
 }
 
 	.timelineEvent .media img {
-		border:2px solid #000;
+		border:0px solid #000;
 		margin:0;
 	}
 
