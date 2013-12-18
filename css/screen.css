@@ -1,28 +1,23 @@
 /* ======= DEMO LAYOUT ======= */
 
 body {
-	background-color:#2f2f2f;
-	color:#eeefef;
-	font-size:62.5%;
-	font-family:Arial, Helvetica, sans-serif;
+	color: #4c4c4c;
+	background-color: #2aabe1;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 13px;
 	margin:0;
 	padding:0;
 }
 
 .container {
-	width:940px;
-	margin-left:auto;
-	margin-right:auto;
-	padding:10px;
+	 width: 1020px;
+	 margin: 20px auto 40px;
 	*zoom:1;
 }
 
-h1, h2 {  }
-
 h1 {
-	color:#7DBADF;
-	font-size:36px;
-	font-weight:400;
+	font-size: 20px;
+  font-weight: 300;
 	margin:0;
 }
 
@@ -39,12 +34,13 @@ h3 {
 }
 
 a:link,a:visited {
-	color:#7097af;
-	text-decoration:none;
+	color: #fff;
+	text-decoration: underline;
 }
 
 a:hover {
-	color:#7DBADF;
+	color: #0092cf;
+	text-decoration: underline;
 }
 
 a img {
@@ -56,6 +52,7 @@ p {
 	font-size:1.3em;
 	font-weight:400;
 	line-height:1.6em;
+	width:85%;
 }
 
 .clear {
@@ -67,10 +64,73 @@ p {
 /* ============ TIMELINE ============= */
 
 div#timelineContainer {
-	border-left:2px solid #ccc;
-	margin:20px auto;
-	width:900px;
+	 background-color: #fff;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  box-shadow: 0 3px 3px -2px rgba(0,0,0,0.2);
 }
+
+#header {
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+  background-color: #3fb58e;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  overflow: hidden;
+  min-height: 230px;
+  display: flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  align-items: center;
+  -webkit-box-align: center;
+  -ms-justify-content: center;
+}
+
+#header-content {
+  position: relative;
+  left: 5%;
+  width:90%;
+}
+
+#header-img {
+  display: inline-block;
+  position: relative;
+  width: 180px;
+  height: 180px;
+}
+
+#header-img img {
+  position: absolute;
+  left: 105px;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+}
+
+#header h1 {
+  margin: 0;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+#header h2 {
+  margin: 7px 0 0;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+#header h2 a {
+  color: #fff;
+}
+
+#header-group {
+  width: 650px;
+}
+
 
 div.timelineToggle {
 	float:right;
@@ -232,3 +292,25 @@ dl.timelineMinor {
 	.timelineEvent .media a:hover {
 		color:#7DBADF;
 	}
+
+/* desktop @ 1520px */
+@media (min-width: 1520px) {
+  .wrapper {
+    width: 1520px;
+    margin: 20px auto;
+  }
+
+  #header-group {
+    width: auto;
+    max-width: 1050px;
+  }
+
+  #left-side {
+    width: 850px;
+    margin-right: 140px;
+  }
+
+  #right-side {
+    width: 400px;
+  }
+}
